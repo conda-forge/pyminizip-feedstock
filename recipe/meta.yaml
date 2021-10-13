@@ -27,7 +27,7 @@ test:
   imports:
     - pyminizip
   commands:
-    - pip check
+     - pip check  # [unix and (python_impl != 'pypy')]
   requires:
     - pip
 
