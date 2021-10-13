@@ -21,15 +21,13 @@ requirements:
     - pip
     - python
   run:
-    - colorama
     - python
 
 test:
   imports:
     - pyminizip
   commands:
-     # Disable pip check for pypy37 windows; problem with tqdm
-     - pip check  # [not (win and python_impl == 'pypy')]
+     - pip check  # [unix and (python_impl != 'pypy')]
   requires:
     - pip
 
