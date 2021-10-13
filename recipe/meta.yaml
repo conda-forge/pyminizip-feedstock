@@ -21,6 +21,7 @@ requirements:
     - pip
     - python
   run:
+    - colorama
     - python
 
 test:
